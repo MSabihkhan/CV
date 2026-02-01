@@ -1,0 +1,42 @@
+body{
+    background-color: #131313;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+}
+
+.Hero-Image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Text layer */
+.Hero {
+    position: absolute;
+    top: 40%;               
+    left: 5%;               
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    
+    color: white;
+    max-width: 60%;
+}
+.Hero > h3{
+    color: #800020;
+    line-height: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Hero >H1{
+    line-height: 0%;
+    font-size:50px;
+    font-family:cursive;
+    
+}
+.Hero>p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 60%
+}
