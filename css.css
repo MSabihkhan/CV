@@ -1,19 +1,23 @@
 body{
     background-color: #131313;
+    display: flex;
+    color: white;
+    flex-direction: column;
 }
 
 header {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
+    overflow: hidden;
 }
 
 .Hero-Image img {
     width: 100%;
     height: 100%;
+    
 }
 
-/* Text layer */
 .Hero {
     position: absolute;
     top: 40%;               
@@ -30,13 +34,36 @@ header {
     line-height: 0%;
     font-family: 'Courier New', Courier, monospace;
 }
-.Hero >H1{
-    line-height: 0%;
-    font-size:50px;
-    font-family:cursive;
-    
+
+.Hero > h1 {
+    font-size: 50px;
+    font-family: cursive;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    border-right: 2px solid white;
+    animation: typing 2s steps(40) forwards,
+               blink-caret 2s step-end infinite;
 }
 .Hero>p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     max-width: 60%
+}
+
+
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 320px; }
+}
+
+@keyframes blink-caret {
+    0%, 100% { border-color: white; }
+    50% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
